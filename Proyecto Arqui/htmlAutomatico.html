@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- basic -->
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <!-- mobile metas -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="initial-scale=1, maximum-scale=1" name="viewport"/>
+  <!-- site metas -->
+  <title>
+   Proyecto Multicore
+  </title>
+  <meta content="" name="keywords"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <!-- bootstrap css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- style css -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- Responsive-->
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <!-- fevicon -->
+  <link href="images/fevicon.png" rel="icon" type="image/gif"/>
+  <!-- Scrollbar Custom CSS -->
+  <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <!-- Tweaks for older IEs-->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" rel="stylesheet"/>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+ </head>
+ <!-- body -->
+ <body class="main-layout">
+  <!-- loader  -->
+  <div class="loader_bg">
+   <div class="loader">
+    <img alt="#" src="images/loading.gif"/>
+   </div>
+  </div>
+  <!-- end loader -->
+  <!-- header -->
+  <header>
+   <!-- header inner -->
+   <div class="header">
+    <div class="container">
+     <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+       <div class="full">
+        <div class="center-desk">
+         <div class="logo">
+          <a href="index.html">
+           <img alt="#" src="images/logo.png"/>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+       <div class="menu-area">
+        <div class="limit-box">
+         <nav class="main-menu">
+          <ul class="menu-area-main">
+           <li class="active">
+            <a href="#">
+             Inicio
+            </a>
+           </li>
+           <li>
+            <a href="#plant">
+             Juegos
+            </a>
+           </li>
+          </ul>
+         </nav>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- end header inner -->
+  </header>
+  <!-- end header -->
+  <section>
+   <div class="carousel slide banner-main" data-ride="carousel" id="main_slider">
+    <ol class="carousel-indicators">
+     <li class="active" data-slide-to="0" data-target="#main_slider">
+     </li>
+     <li data-slide-to="1" data-target="#main_slider">
+     </li>
+     <li data-slide-to="2" data-target="#main_slider">
+     </li>
+    </ol>
+    <div class="carousel-inner">
+     <div class="carousel-item active">
+      <div class="container">
+       <div class="row marginii">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <div class="carousel-caption">
+          <h1>
+           Comparativas
+           <strong class="color">
+            Precios
+           </strong>
+          </h1>
+         </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <div class="img-box">
+          <figure>
+           <img alt="img" src="images/precios.png"/>
+          </figure>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="carousel-item">
+      <div class="container">
+       <div class="row marginii">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <div class="carousel-caption">
+          <h1>
+           Analisis
+           <strong class="color">
+            Metacritic
+           </strong>
+          </h1>
+          <p>
+           Metacritic's proprietary Metascore distills the opinions of the most respected critics writing online and in print to a single number.
+          </p>
+         </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <div class="img-box">
+          <figure>
+           <img alt="img" src="images/meta.png"/>
+          </figure>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="carousel-item">
+      <div class="container">
+       <div class="row marginii">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <div class="carousel-caption">
+          <h1>
+           Analisis
+           <strong class="color">
+            How Long To Beat
+           </strong>
+          </h1>
+         </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+         <div class="img-box">
+          <figure>
+           <img alt="img" src="images/hltb.png"/>
+          </figure>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <a class="carousel-control-prev" data-slide="prev" href="#main_slider" role="button">
+     <i class="fa fa-angle-left">
+     </i>
+    </a>
+    <a class="carousel-control-next" data-slide="next" href="#main_slider" role="button">
+     <i class="fa fa-angle-right">
+     </i>
+    </a>
+   </div>
+  </section>
+  <!-- plant -->
+  <div class="plants" id="plant">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <div class="titlepage">
+       <h2>
+        Juegos
+       </h2>
+       <span>
+        Precios, Metacritic &amp; HowLongToBeat
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row">
+     &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/Control.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     Control
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg: $41.99
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $39.99
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 82
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 11½ Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/TalesofArise.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     Tales of Arise
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg:
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $79.99
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 79
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 44½ Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/Outriders.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     Outriders
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg: $64.55
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $79.99
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 72
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 15 Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/AceCombat7:SkiesUnknown.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     AceCombat7:SkiesUnknown
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg: $23.39
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $79.99
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 80
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 11 Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/Ancestors:TheHumankindOdyssey.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     Ancestors:TheHumankindOdyssey
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg: $14.39
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $53.49
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 70
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 17 Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/AstrobotRescueMission.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     AstrobotRescueMission
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg: $24.53
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $29.99
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 90
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 7½ Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-4 col-md-6 col-sm-12"&gt;
+   &lt;div class="plants-box"&gt;
+    &lt;figure alt="img" img src="images/AssassinsCreed:Odyssey.jpg"&gt;
+    &lt;/figure&gt;
+    &lt;h3&gt;
+     AssassinsCreed:Odyssey
+    &lt;/h3&gt;
+    &lt;p&gt;
+     NewEgg: $19.00
+    &lt;/p&gt;
+    &lt;p&gt;
+     BestBuy: $29.95
+    &lt;/p&gt;
+    &lt;p&gt;
+     MetaCritic: 83
+    &lt;/p&gt;
+    &lt;p&gt;
+     HowLongToBeat: 42½ Hours
+    &lt;/p&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+    </div>
+   </div>
+  </div>
+  <!-- end plant -->
+  <!-- footer -->
+  <footer>
+   <div class="footer" id="contact">
+    <div class="container">
+     <div class="row pdn-top-30">
+      <div class="col-md-12">
+       <div class="footer-box">
+        <div class="menu-bottom">
+         <ul class="link">
+          <li>
+           <a href="#">
+            Inicio
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Juegos
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Galeria
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="copyright">
+     <div class="container">
+      <p>
+       Proyecto Multicore | Mauricio | Isaac | Angelica | 2021
+      </p>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- end footer -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="js/popper.min.js">
+  </script>
+  <script src="js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/jquery-3.0.0.min.js">
+  </script>
+  <script src="js/plugin.js">
+  </script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="js/custom.js">
+  </script>
+  <!-- javascript -->
+  <script src="js/owl.carousel.js">
+  </script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+  </script>
+ </body>
+</html>
